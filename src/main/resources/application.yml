@@ -1,0 +1,17 @@
+# Spring properties
+# Service registry under this name
+spring:
+  application:
+    name: account-microservice
+
+# Discovery server access
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:2222/eureka/}
+
+# HTTP (Tomcact) port
+server:
+  port: 0
